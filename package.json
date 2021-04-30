@@ -1,0 +1,30 @@
+{
+  "name": "laretasgeek",
+  "private": true,
+  "scripts": {
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
+  },
+  "dependencies": {
+    "@gridsome/remark-prismjs": "^0.5.0",
+    "@gridsome/transformer-remark": "^0.6.4",
+    "gridsome": "^0.7.0",
+    "gridsome-source-static-meta": "^1.0.1",
+    "vuex": "^3.6.2",
+    "vuex-composition-helpers": "^1.0.23",
+    "vuex-persistedstate": "^3"
+  },
+  "devDependencies": {
+    "@gridsome/plugin-sitemap": "^0.4.0",
+    "@gridsome/source-filesystem": "^0.6.2",
+    "gridsome-plugin-composition-api": "^0.0.3",
+    "gridsome-plugin-feed": "^1.0.2",
+    "gridsome-plugin-typescript": "^0.4.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10",
+    "sireno-grid": "^0.3.0",
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.4"
+  }
+}

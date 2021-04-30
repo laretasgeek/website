@@ -1,0 +1,24 @@
+{
+  "social": [
+    {
+      "id": "twitter",
+      "user": "laretasgeek",
+      "link": "https://twitter.com/laretasgeek"
+    },
+    {
+      "id": "youtube",
+      "user": "laretasgeek",
+      "link": "https://www.youtube.com/channel/UCYSy-eQm6Q02o7WiR6JTqJgk"
+    },
+    {
+      "id": "twitch",
+      "user": "laretasgeek",
+      "link": "https://www.twitch.tv/laretasgeek"
+    },
+    {
+      "id": "linkedin",
+      "user": "laretasgeek",
+      "link": "https://www.twitch.tv/laretasgeek"
+    }
+  ]
+}

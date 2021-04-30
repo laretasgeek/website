@@ -1,0 +1,58 @@
+@import "~@/assets/scss/settings";
+
+$size: 16px;
+$aspect: 2.5;
+
+.theme-switch {
+  display: inline-block;
+  position: relative;
+
+  input[type=checkbox]{
+    position: absolute;
+    visibility: hidden;
+  }
+
+  &-track {
+    position: relative;
+    border: 1px solid var(--primary-color);
+    width: $size * $aspect;
+    height: $size + 4;
+    border-radius: $size + 4;
+    box-shadow: 0 0 15px var(--primary-color);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+    &:after {
+      top: 2px;
+      left: 2px;
+      content: '';
+      display: block;
+      position: absolute;
+      width: $size;
+      height: $size;
+      border-radius: $size;
+      background: var(--primary-color);
+      transition: all .2s ease-in-out;
+    }
+  }
+
+  .light, .dark {
+    position: absolute;
+    top: 4px;
+    width: $size * 0.8
+  }
+
+  .light {
+    top: 5px;
+    right: 4px;
+  }
+
+  .dark {
+    left: 4px;
+  }
+
+  input[type=checkbox]:checked ~ .theme-switch-wrapper .theme-switch-track::after{
+    left: #{$size * ($aspect - 1) - 3};
+    background: var(--primary-color);
+  }
+}

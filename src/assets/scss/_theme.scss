@@ -1,0 +1,15 @@
+// Light theme
+:root {
+  --primary-color: #{$text-color-light-theme};
+  --contrast-color: #{$white};
+  --bg-color: #{$bg-light};
+  --highlights-color: #{$red};
+}
+
+// Dark theme
+[data-theme="dark"] {
+  --primary-color: #{$text-color-dark-theme};
+  --contrast-color: #{$bg-dark};
+  --bg-color: #{$bg-dark};
+  --highlights-color: #{$red};
+}
