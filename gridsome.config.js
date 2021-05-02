@@ -15,6 +15,69 @@ module.exports = {
         path: 'settings/*.json'
       }
     },
+    {
+      use: "gridsome-plugin-i18n",
+      options: {
+        locales: [ // locales list
+          'es-es',
+          'gl-es',
+        ],
+        pathAliases: { // path segment alias for each locales
+          'es-es': 'es',
+          'gl-es': 'gl',
+        },
+        fallbackLocale: 'gl-es',
+        defaultLocale: 'gl-es', // default language
+        enablePathRewrite: true, // rewrite path with locale prefix, default: true
+        rewriteDefaultLanguage: true, // rewrite default locale, default: true
+        messages: {},
+        dateTimeFormats: {
+          'gl-es': {
+            short: {
+              day: 'numeric',
+              month: 'short',
+              year: 'numeric'
+            },
+            medium: {
+              weekday: 'long',
+              day: 'numeric',
+              month: 'long',
+              year: 'numeric'
+            },
+            long: {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+              weekday: 'long',
+              hour: 'numeric',
+              minute: 'numeric'
+            }
+          },
+          'es-es': {
+            short: {
+              day: 'numeric',
+              month: 'short',
+              year: 'numeric'
+            },
+            medium: {
+              weekday: 'long',
+              day: 'numeric',
+              month: 'long',
+              year: 'numeric'
+            },
+            long: {
+              year: 'numeric',
+              month: 'long',
+              day: 'numeric',
+              weekday: 'long',
+              hour: 'numeric',
+              minute: 'numeric'
+            }
+          },
+        }
+        // routes: require('./routes.ts')
+      }
+    },
     { use: 'gridsome-plugin-typescript' },
     { use: 'gridsome-plugin-composition-api' },
     {

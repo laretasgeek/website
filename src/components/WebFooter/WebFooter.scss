@@ -1,3 +1,87 @@
 .web-footer {
-  background: $bg-dark;
+  margin-top: 80px;
+  &-content {
+    position: relative;
+    padding-top: 40px;
+    color: var(--primary-color);
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  &-hexagon {
+    overflow: hidden;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 500px;
+    bottom: 0;
+    z-index: 0;
+    color: var(--bg-color-alt);
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  .grid-row {
+    position: relative;
+  }
+
+  &-social {
+    max-width: 400px;
+    list-style: none;
+    padding: 0 0 0 30px;
+
+    &-link {
+      a {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+
+        .user {
+          transition: all .2s ease-in-out;
+        }
+
+        &:hover {
+          .icon-wrapper {
+            transform: rotate(-10deg);
+            svg {
+              transform: rotate(10deg);
+            }
+          }
+          .user {
+            transform: translate(-10px, 0);
+          }
+        }
+      }
+
+      .icon-wrapper {
+        position: relative;
+        width: 40px;
+        height: 35px;
+        display: flex;
+        margin: 5px 25px 5px 0;
+        background: url(~@/assets/i/hexagon-90deg.svg);
+        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s ease-in-out;
+        svg {
+          transition: all .2s ease-in-out;
+          display: block;
+          width: 22px;
+        }
+      }
+    }
+
+  }
+
+  &-copy {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 30px;
+  }
+
 }

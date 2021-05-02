@@ -4510,6 +4510,14 @@ gridsome-plugin-feed@^1.0.2:
     micromatch "^4.0.2"
     moment "^2.24.0"
 
+gridsome-plugin-i18n@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-i18n/-/gridsome-plugin-i18n-1.6.0.tgz#6bb1456fa60a1be856a7bd0a04bea41f753db3e0"
+  integrity sha512-p7jNEk5RwhQlAVMPZyCvw7HxrheRfbXf7w4wXm0NJdxj9FD9r61voEDVlUGirdt+Rt2lJ5HDowzg3qsumnWM6w==
+  dependencies:
+    core-js "^3.6.4"
+    vue-i18n "^8.15.5"
+
 gridsome-plugin-typescript@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-typescript/-/gridsome-plugin-typescript-0.4.0.tgz#d6037275bfc1a92844d704c3f67b685478d6351d"
@@ -9727,6 +9735,11 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.4"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.4.tgz#532955cc1eb208a3d990b3a9f9a70574657e08f2"
   integrity sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==
+
+vue-i18n@^8.15.5:
+  version "8.24.4"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-8.24.4.tgz#b158614c1df7db183d9cadddbb73e1d540269492"
+  integrity sha512-RZE94WUAGxEiBAANxQ0pptbRwDkNKNSXl3fnJslpFOxVMF6UkUtMDSuYGuW2blDrVgweIXVpethOVkYoNNT9xw==
 
 vue-loader@^15.7.1:
   version "15.9.6"

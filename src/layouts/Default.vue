@@ -1,7 +1,7 @@
 <template>
   <div :class="['layout', { 'not-in-top': notInTop }]">
     <web-header></web-header>
-    <div class="container-fluid-1440">
+    <div class="container-fluid-1440 main-content">
       <div class="grid-row">
         <div class="col-md-1"></div>
         <div class="col-xs-12 col-md-10">

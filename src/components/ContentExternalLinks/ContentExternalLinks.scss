@@ -1,0 +1,28 @@
+@import "~@/assets/scss/settings";
+
+.content-external-links {
+  background: $white;
+  padding: 20px 20px 10px 20px;
+  display: flex;
+  a {
+    width: 70px;
+    display: flex;
+    margin: 0 15px 10px 0;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    img {
+      display: block;
+    }
+
+    &.ivoox {
+      img {
+        transform: translate(0, -2px);
+        width: 90px;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

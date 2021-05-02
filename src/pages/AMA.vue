@@ -1,36 +1,35 @@
 <template>
   <Layout>
     <header>
-      <h1>Laretas AMA (Ask me anything)</h1>
+      <h1>{{ $t('ama.title')}}</h1>
     </header>
 
     <div class="content">
-      <p>
-        Este formato de <strong>Laretas</strong> ten como obxectivo dar a coñecer a persoas da comunidade tecnolóxica galega. En cada evento un destes membros entrevista de forma informal. O final da entrevista o entrevistado nomea a persona que será a vindeira entrevistada e este pasa a ser persoa que entrevista na seguinte edición,
-      </p>
+      <p v-html="$t('ama.description')"></p>
     </div>
 
-    Next AMA
+    [[[[Next AMA]]]]
 
-    <p>Link to playlists</p>
+    <p class="mb-7">[[[[Link to playlists]]]</p>
 
-    <div class="grid-row">
+    <div class="grid-row gap-30">
       <div
-        v-for="item in $page.amas.edges"
-        :key="item.node.id"
-        class="col-xs-12 col-sm-6 col-md-3 mb-3"
+          v-for="item in $page.amas.edges"
+          :key="item.node.id"
+          class="col-xs-12 col-sm-6 col-md-4 mb-3"
       >
         <ama-teaser :node="item.node"></ama-teaser>
       </div>
     </div>
 
-  <Pager :info="$page.amas.pageInfo" />
+    <pager :info="$page.amas.pageInfo" class="pagination" navClass="nav" linkClass="page"/>
+    <div style="margin-bottom: 40px"></div>
   </Layout>
 </template>
 
 <page-query>
 query ($page: Int) {
-  amas: allAma (perPage: 3, page: $page, filter: { published: { eq: true }}) @paginate{
+  amas: allAma (perPage: 12, page: $page, filter: { published: { eq: true }}) @paginate{
     pageInfo {
       totalPages
       currentPage
@@ -41,36 +40,23 @@ query ($page: Int) {
         path
         title
         published
-        date (format: "MMMM D, YYYY")
+        date (format: "YYYY-MM-DD")
         excerpt
         content
+        youtube
+        spotify
+        ivoox
       }
     }
   }
 }
 </page-query>
 
-<!--videos: allAma ( perPage: 3, page: 1, filter: { published: { eq: true }}) @paginate {-->
-<!--pageInfo {-->
-<!--totalPages-->
-<!--currentPage-->
-<!--}-->
-<!--edges {-->
-<!--node {-->
-<!--id-->
-<!--path-->
-<!--title-->
-<!--published-->
-<!--date (format: "MMMM D, YYYY")-->
-<!--excerpt-->
-<!--}-->
-<!--}-->
-<!--}-->
-
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'
 import { Pager } from 'gridsome'
-import AmaTeaser from '../components/AMA-teaser.vue'
+import AmaTeaser from '../components/AMATeaser'
+
 export default defineComponent({
   name: 'ama-list-page',
   components: {

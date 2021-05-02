@@ -12,6 +12,7 @@
           <g-link to="/ama/">AMA</g-link>
           <g-link to="/participants/">Participantes</g-link>
         </nav>
+        <locale-switch></locale-switch>
         <theme-switch></theme-switch>
       </div>
     </div>
@@ -28,12 +29,16 @@ query {
 <script lang="ts">
 import { defineComponent, Ref, ref } from '@vue/composition-api'
 import { Theme } from '~/types'
-import ThemeSwitch from '../ThemeSwitch/ThemeSwitch.vue'
+import ThemeSwitch from '../ThemeSwitch'
+import LocaleSwitch from '../LocaleSwitch'
 import './WebHeader.scss'
 
 export default defineComponent({
   name: 'web-header',
-  components: { ThemeSwitch },
+  components: {
+    ThemeSwitch,
+    LocaleSwitch
+  },
   setup() {
   }
 })

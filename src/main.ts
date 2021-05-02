@@ -11,6 +11,10 @@ const client: ClientApiConstructor = (Vue, { router, head, appOptions}) => {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   appOptions.store = store
+
+  appOptions.i18n.setLocaleMessage('gl-es', require('./locales/gl-es.json'))
+  appOptions.i18n.setLocaleMessage('es-es', require('./locales/es-es.json'))
+
 }
 
 export default client

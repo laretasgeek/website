@@ -3,6 +3,7 @@
   --primary-color: #{$text-color-light-theme};
   --contrast-color: #{$white};
   --bg-color: #{$bg-light};
+  --bg-color-alt: #bebebe;
   --highlights-color: #{$red};
 }
 
@@ -11,5 +12,6 @@
   --primary-color: #{$text-color-dark-theme};
   --contrast-color: #{$bg-dark};
   --bg-color: #{$bg-dark};
+  --bg-color-alt: #393939;
   --highlights-color: #{$red};
 }

@@ -14,10 +14,15 @@ body {
 
 img {
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .layout {
   padding-top: 130px;
-  min-height: 130vh;
+}
+
+.main-content {
+  min-height: 60vh;
+  overflow-y: hidden;
 }

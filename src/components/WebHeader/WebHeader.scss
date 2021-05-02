@@ -5,10 +5,11 @@
   left: 0;
   top: 0;
   right: 0;
-  background: '#f00'; // var(--bg-color);
+  background: var(--bg-color);
+  z-index: 1;
   &-content {
     position: relative;
-    padding: 25px 15px 30px 190px;
+    padding: 25px 15px 15px 200px;
     transition: all .2s ease-in-out;
     display: flex;
   }
@@ -46,13 +47,16 @@
 .not-in-top {
   .web-header {
     &-content {
-      padding-left: 120px;
+      padding-left: 140px;
       padding-top: 15px;
     }
     &-logo {
       width: 100px;
       top: -20px;
     }
-  }
 
+    .nav {
+      font-size: 20px
+    }
+  }
 }
