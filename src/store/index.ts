@@ -19,10 +19,15 @@ const mutations: MutationTree<StoreState> = {
   }
 }
 
+const plugins = []
+
+console.log(process)
+if ((process as any).isClient) {
+  plugins.push(createPersistedState({ key: 'laretasgeek', }))
+}
+
 export default new Vuex.Store({
-  plugins: [
-    createPersistedState({ key: 'laretasgeek', })
-  ],
+  plugins: plugins,
   state,
   mutations
 })

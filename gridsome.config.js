@@ -7,6 +7,7 @@
 module.exports = {
   siteName: 'LaretasGeek',
   siteDescription: 'Lorem Ipsum dolor est',
+  siteUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:8082' : 'https://laretasgreek.com',
   icon: './src/assets/i/favicon.png',
   plugins: [
     {
@@ -134,7 +135,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-feed',
       options: {
-        contentTypes: ['Post'],
+        contentTypes: ['AMA', 'Event'],
         feedOptions: {
           title: 'LaretasGeek',
           description: ''

@@ -6,7 +6,8 @@
     "noImplicitReturns": true,
     "outDir": "./built/",
     "sourceMap": true,
-    "strict": true
+    "strict": true,
+    "downlevelIteration": true
   },
   "paths": {
     "~/*": ["./src/*"],
@@ -14,5 +15,8 @@
   },
   "include": [
     "./src/**/*"
+  ],
+  "exclude": [
+    "./node_modules/**/+"
   ]
 }
