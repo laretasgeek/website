@@ -7,21 +7,25 @@ Vue.use(Vuex)
 
 export interface StoreState {
   theme: Theme;
+  mobileMenu: boolean;
 }
 
 const state: StoreState = {
-  theme: Theme.Dark
+  theme: Theme.Dark,
+  mobileMenu: false
 }
 
 const mutations: MutationTree<StoreState> = {
   setTheme(store: StoreState, theme: Theme) {
     store.theme = theme
+  },
+  setMobileMenuVisibility(store: StoreState, state: boolean) {
+    store.mobileMenu = state
   }
 }
 
 const plugins = []
 
-console.log(process)
 if ((process as any).isClient) {
   plugins.push(createPersistedState({ key: 'laretasgeek', }))
 }

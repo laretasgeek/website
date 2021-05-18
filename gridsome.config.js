@@ -32,50 +32,7 @@ module.exports = {
         enablePathRewrite: true, // rewrite path with locale prefix, default: true
         rewriteDefaultLanguage: true, // rewrite default locale, default: true
         messages: {},
-        dateTimeFormats: {
-          'gl-es': {
-            short: {
-              day: 'numeric',
-              month: 'short',
-              year: 'numeric'
-            },
-            medium: {
-              weekday: 'long',
-              day: 'numeric',
-              month: 'long',
-              year: 'numeric'
-            },
-            long: {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-              weekday: 'long',
-              hour: 'numeric',
-              minute: 'numeric'
-            }
-          },
-          'es-es': {
-            short: {
-              day: 'numeric',
-              month: 'short',
-              year: 'numeric'
-            },
-            medium: {
-              weekday: 'long',
-              day: 'numeric',
-              month: 'long',
-              year: 'numeric'
-            },
-            long: {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-              weekday: 'long',
-              hour: 'numeric',
-              minute: 'numeric'
-            }
-          },
-        }
+        // enablePathGeneration: false,
         // routes: require('./routes.ts')
       }
     },
@@ -86,7 +43,7 @@ module.exports = {
       options: {
         path: 'content/participants/*.md',
         typeName: 'Participant',
-        route: '/participante/:title',
+        route: '/participante/:id',
         remark: {
           plugins: [
             ['@gridsome/remark-prismjs', { transformInlineCode: true }]
@@ -98,7 +55,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'content/ama/*.md',
-        typeName: 'AMA',
+        typeName: 'LaretasAma',
         route: '/ama/:title',
         remark: {
           plugins: [
@@ -106,23 +63,39 @@ module.exports = {
           ]
         },
         refs: {
-          participant: 'Participant',
+          participants: 'Participant',
         }
       }
     },
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'content/events/*.md',
-        typeName: 'Event',
-        route: '/event/:title',
+        path: 'content/geek/*.md',
+        typeName: 'LaretasGeek',
+        route: '/:title',
+        refs: {
+          participants: 'Participant'
+        },
         remark: {
           plugins: [
             ['@gridsome/remark-prismjs', { transformInlineCode: true }]
           ],
-          refs: {
-            participant: 'Participant',
-          }
+        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/java/*.md',
+        typeName: 'LaretasJava',
+        route: '/:title',
+        refs: {
+          participants: 'Participant'
+        },
+        remark: {
+          plugins: [
+            ['@gridsome/remark-prismjs', { transformInlineCode: true }]
+          ]
         }
       }
     },
@@ -135,7 +108,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-feed',
       options: {
-        contentTypes: ['AMA', 'Event'],
+        contentTypes: ['AMA', 'Regular'],
         feedOptions: {
           title: 'LaretasGeek',
           description: ''

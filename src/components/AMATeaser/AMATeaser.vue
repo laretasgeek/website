@@ -2,7 +2,7 @@
   <article class="ama-teaser">
     <footer>
       <h4 class="date">
-        {{ $d(new Date(node.date), 'medium') }}<br/>
+        {{ new Date(node.date) | formatDate }}<br/>
       </h4>
     </footer>
     <div class="cover responsive-embed-wrapper">
@@ -13,7 +13,9 @@
     </div>
     <header>
       <h2>
-        {{ node.title }}
+        <g-link :to="node.path" class="read">
+          {{ node.title }}
+        </g-link>
       </h2>
     </header>
     <content-external-links
@@ -24,19 +26,24 @@
   </article>
 </template>
 <script lang="ts">
-import { defineComponent, ComputedRef, computed } from '@vue/composition-api'
+import { defineComponent, ComputedRef, computed, getCurrentInstance } from '@vue/composition-api'
+import ContentExternalLinks from '../ContentExternalLinks/'
+import formatDate from '~/filters/formatDate'
 import './AMATeaser.scss'
-import ContentExternalLinks from '../ContentExternalLinks/ContentExternalLinks.vue'
 
 export default defineComponent({
   name: 'ama-teaser',
   components: {
     ContentExternalLinks
   },
+  filters: {
+    formatDate
+  },
   props: {
     node: Object
   },
   setup (props: Record<string, any>) {
+    const instance = getCurrentInstance()
 
     const getYTIdFromUrl = (urlString: string) => {
       const url = new URL(urlString)
@@ -53,7 +60,8 @@ export default defineComponent({
     })
 
     return {
-      youtubeEmbedLink
+      youtubeEmbedLink,
+      locale: (instance?.proxy as any).$i18n.locale.toString() || '',
     }
 
 

@@ -1,9 +1,15 @@
+@import "~@/assets/scss/settings";
+
 .locale-switch {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 8px 15px 0 0;
   font-weight: bold;
+  @include media($sm) {
+    margin-top: 0;
+  }
+
   &-lang {
     cursor: pointer;
     color: var(--primary-color);

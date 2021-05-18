@@ -1,6 +1,30 @@
 {
+  "menu": {
+    "geek": "Geek",
+    "java": "Java",
+    "ama": "AMA",
+    "participants": "Participantes"
+  },
   "ama": {
     "title": "Laretas AMA (Ask me anything)",
     "description": "Este formato de <strong>Laretas</strong> tiene como objetivo dar a conocer a personas de la comunidad tecnológica gallega. En cada evento un de estos miembros entrevistra de forma informal a otro. Al final de la entrevista el entrevistado nombra a la persona que será la próxima entrevistada y este pasa a ser la persona que entrevista en la siguiente edicción."
-  }
+  },
+  "geek": {
+    "title": "Laretas Geek",
+    "description": "Lorem ipsum dolor est"
+  },
+  "java": {
+    "title": "Laretas Java",
+    "description": "Lorem ipsum dolor est"
+  },
+  "participants": {
+    "title": "Participantes",
+    "description": "Lorem ipsum dolor est"
+  },
+
+
+  "page-not-found": "La página que buscas no existe",
+  "go-to-home": "Ir al inicio",
+  "view-more": "Ver más"
+
 }

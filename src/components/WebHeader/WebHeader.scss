@@ -6,12 +6,15 @@
   top: 0;
   right: 0;
   background: var(--bg-color);
-  z-index: 1;
+  z-index: 100;
   &-content {
     position: relative;
     padding: 25px 15px 15px 200px;
     transition: all .2s ease-in-out;
     display: flex;
+    @include media($sm) {
+      padding: 15px 15px 15px 110px;
+    }
   }
   &-logo {
     position: absolute;
@@ -20,6 +23,17 @@
     left: 20px;
     margin: 0;
     transition: all .2s ease-in-out;
+
+    @include media($sm) {
+      top: -20px;
+      left: 55px;
+      width: 80px;
+    }
+  }
+  .menu-toggle-btn {
+    position: absolute;
+    left: 0;
+    top: 10px;
   }
 
   .nav {
@@ -39,8 +53,15 @@
     }
   }
 
+  .spacer {
+    flex: 1;
+  }
+
   .theme-switch {
     margin-top: 10px;
+    @include media($sm) {
+      margin-top: 0px;
+    }
   }
 }
 
@@ -49,10 +70,19 @@
     &-content {
       padding-left: 140px;
       padding-top: 15px;
+      @include media($sm) {
+        padding: 15px 15px 15px 110px;
+      }
     }
     &-logo {
       width: 100px;
       top: -20px;
+
+      @include media($sm) {
+        top: -20px;
+        left: 55px;
+        width: 80px;
+      }
     }
 
     .nav {

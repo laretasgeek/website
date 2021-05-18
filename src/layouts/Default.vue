@@ -1,6 +1,7 @@
 <template>
   <div :class="['layout', { 'not-in-top': notInTop }]">
     <web-header></web-header>
+    <mobile-menu></mobile-menu>
     <div class="container-fluid-1440 main-content">
       <div class="grid-row">
         <div class="col-md-1"></div>
@@ -16,10 +17,12 @@
 import { defineComponent, onBeforeMount, onBeforeUnmount, Ref, ref } from '@vue/composition-api'
 import WebHeader from '~/components/WebHeader'
 import WebFooter from '~/components/WebFooter'
+import MobileMenu from '~/components/MobileMenu'
 
 export default defineComponent({
   name: 'default-layout',
   components: {
+    MobileMenu,
     WebHeader,
     WebFooter
   },

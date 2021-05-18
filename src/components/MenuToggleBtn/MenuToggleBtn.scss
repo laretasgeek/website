@@ -1,0 +1,49 @@
+.menu-toggle-btn {
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 40px;
+  display: block;
+  cursor: pointer;
+  z-index: 80;
+  position: relative;
+
+  span {
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+    transform-origin: center center;
+    content: '';
+    position: absolute;
+    background: var(--primary-color);
+    left: 0;
+    right: 0;
+    height: 3px;
+    display: block;
+
+    &.top-line {
+      top: 7px;
+    }
+    &.middle-line {
+      top: 15px;
+    }
+    &.bottom-line {
+      top: 23px;
+    }
+  }
+
+  $translate: 5.4px;
+
+  &.open {
+    .top-line {
+      transform: rotate(-45deg) translate(-$translate, $translate);
+    }
+
+    .middle-line {
+      width: 0;
+    }
+
+    .bottom-line {
+      transform: rotate(45deg) translate(-$translate, -$translate)
+    }
+  }
+}

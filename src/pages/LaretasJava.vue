@@ -1,35 +1,35 @@
 <template>
   <Layout>
     <header>
-      <h1>{{ $t('ama.title')}}</h1>
+      <h1>{{ $t('java.title')}}</h1>
     </header>
 
     <div class="content">
-      <p v-html="$t('ama.description')"></p>
+      <p v-html="$t('java.description')"></p>
     </div>
 
-    [[[[Next AMA]]]]
+    [[[[Next Event]]]]
 
     <p class="mb-7">[[[[Link to playlists]]]</p>
 
     <div class="grid-row gap-30">
       <div
-          v-for="item in $page.amas.edges"
+          v-for="item in $page.java.edges"
           :key="item.node.id"
-          class="col-xs-12 col-sm-6 col-md-4 mb-3"
+          class="col-xs-12 col-sm-6 col-md-4 mb-5"
       >
         <ama-teaser :node="item.node"></ama-teaser>
       </div>
     </div>
 
-    <pager :info="$page.amas.pageInfo" class="pagination" navClass="nav" linkClass="page"/>
+    <pager :info="$page.java.pageInfo" class="pagination" navClass="nav" linkClass="page"/>
     <div style="margin-bottom: 40px"></div>
   </Layout>
 </template>
 
 <page-query>
 query ($page: Int) {
-  amas: allAma (perPage: 12, page: $page, filter: { published: { eq: true }}) @paginate{
+  java: allLaretasJava (perPage: 12, page: $page, filter: { published: { eq: true }}) @paginate{
     pageInfo {
       totalPages
       currentPage
@@ -58,13 +58,13 @@ import { Pager } from 'gridsome'
 import AmaTeaser from '../components/AMATeaser'
 
 export default defineComponent({
-  name: 'ama-list-page',
+  name: 'geek-list-page',
   components: {
     AmaTeaser,
     Pager
   },
   metaInfo: {
-    title: 'Ask me Anything'
+    title: 'Laretas Geek'
   }
 })
 </script>

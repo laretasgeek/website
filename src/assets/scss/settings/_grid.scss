@@ -1,0 +1,8 @@
+@import "~sireno-grid/src/grid/mixins/media";
+@import "~sireno-grid/src/grid/variables";
+
+// Define screen width breakpoints
+$xs: (map-get($grid-breakpoints, xs), map-get($grid-breakpoints, sm) - 1px);
+$sm: (map-get($grid-breakpoints, sm), map-get($grid-breakpoints, md) - 1px);
+$md: (map-get($grid-breakpoints, md), map-get($grid-breakpoints, lg) - 1px);
+$lg: (map-get($grid-breakpoints, lg));

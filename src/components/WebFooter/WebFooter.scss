@@ -1,5 +1,8 @@
+@import "~@/assets/scss/settings";
+
 .web-footer {
-  margin-top: 80px;
+  padding-top: 80px;
+  overflow: hidden;
   &-content {
     position: relative;
     padding-top: 40px;
@@ -82,6 +85,14 @@
     justify-content: flex-end;
     align-items: flex-end;
     padding-bottom: 30px;
+    padding-top: 20px;
+
+    @include media($sm)  {
+      justify-content: flex-start;
+      padding-left: 40px;
+    }
   }
+
+
 
 }

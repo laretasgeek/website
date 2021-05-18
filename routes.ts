@@ -1,22 +1,30 @@
 module.exports = {
-  gl: [
+  'gl-es': [
     {
-      path: '/en/',
+      path: '/gl/',
       component: './src/pages/Index.vue'
     },
     {
-      path: '/en/about/',
-      component: './src/pages/About.vue'
+      path: '/gl/laretas-geek/',
+      component: './src/pages/Geek.vue'
+    },
+    {
+      path: '/gl/participantes/',
+      component: './src/pages/Participants.vue'
     }
   ],
-  it: [
+  'es-es': [
     {
-      path: '/',
+      path: '/es/',
       component: './src/pages/Index.vue'
     },
     {
-      path: '/it/chi-siamo/',
+      path: '/es/videos/',
       component: './src/pages/About.vue'
+    },
+    {
+      path: '/es/participantes/',
+      component: './src/pages/Participants.vue'
     }
   ]
-};
+}
