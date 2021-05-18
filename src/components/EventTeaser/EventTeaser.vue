@@ -1,5 +1,5 @@
 <template>
-  <article class="ama-teaser">
+  <article class="event-teaser">
     <footer>
       <h4 class="date">
         {{ new Date(node.date) | formatDate }}<br/>
@@ -29,10 +29,10 @@
 import { defineComponent, ComputedRef, computed, getCurrentInstance } from '@vue/composition-api'
 import ContentExternalLinks from '../ContentExternalLinks/'
 import formatDate from '~/filters/formatDate'
-import './AMATeaser.scss'
+import './EventTeaser.scss'
 
 export default defineComponent({
-  name: 'ama-teaser',
+  name: 'event-teaser',
   components: {
     ContentExternalLinks
   },

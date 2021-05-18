@@ -4,8 +4,8 @@ number: 4
 date: 2020-11-04
 published: true
 youtube: https://www.youtube.com/watch?v=5BRaPH5BYPY
-spotify:
-ivoox:
+spotify: ""
+ivoox: ""
 participants:
   - ana-fernandez
   - ester-gonzalez

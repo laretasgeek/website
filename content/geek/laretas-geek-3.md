@@ -4,8 +4,8 @@ number: 3
 date: 2020-07-24
 published: true
 youtube: https://www.youtube.com/watch?v=SHw_MdfmqfA
-spotify:
-ivoox:
+spotify: ""
+ivoox: ""
 participants:
   - 1
   - "alex-hermida"

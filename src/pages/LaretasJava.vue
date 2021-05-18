@@ -12,24 +12,14 @@
 
     <p class="mb-7">[[[[Link to playlists]]]</p>
 
-    <div class="grid-row gap-30">
-      <div
-          v-for="item in $page.java.edges"
-          :key="item.node.id"
-          class="col-xs-12 col-sm-6 col-md-4 mb-5"
-      >
-        <ama-teaser :node="item.node"></ama-teaser>
-      </div>
-    </div>
+    <event-list :items="$page.java.edges" :page-info="$page.java.pageInfo"></event-list>
 
-    <pager :info="$page.java.pageInfo" class="pagination" navClass="nav" linkClass="page"/>
-    <div style="margin-bottom: 40px"></div>
   </Layout>
 </template>
 
 <page-query>
 query ($page: Int) {
-  java: allLaretasJava (perPage: 12, page: $page, filter: { published: { eq: true }}) @paginate{
+  java: allEvent (perPage: 12, page: $page, filter: { type: { eq: "laretas-java" }, published: { eq: true }}) @paginate{
     pageInfo {
       totalPages
       currentPage
@@ -54,14 +44,12 @@ query ($page: Int) {
 
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'
-import { Pager } from 'gridsome'
-import AmaTeaser from '../components/AMATeaser'
+import EventList from '../components/EventList'
 
 export default defineComponent({
   name: 'geek-list-page',
   components: {
-    AmaTeaser,
-    Pager
+    EventList
   },
   metaInfo: {
     title: 'Laretas Geek'

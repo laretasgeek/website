@@ -27,19 +27,7 @@ query ($path: String!) {
     belongsTo {
       edges {
         node {
-          ... on LaretasAma {
-            id
-            title
-            path
-            __typename
-          }
-          ... on LaretasGeek {
-            id
-            title
-            path
-            __typename
-          }
-          ... on LaretasJava {
+          ... on Event {
             id
             title
             path

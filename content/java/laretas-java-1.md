@@ -1,5 +1,5 @@
 ---
-title: Laretas Geek - Mesa redonda 25 años de Java
+title: Laretas test
 number: 1
 date: 2020-06-29
 published: true

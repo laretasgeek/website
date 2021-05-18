@@ -4,8 +4,8 @@ number: 2
 date: 2020-07-24
 published: true
 youtube: https://www.youtube.com/watch?v=XyZTCy5WQNc
-spotify:
-ivoox:
+spotify: ""
+ivoox: ""
 participants:
   - david-pardo
   - felix-lopez

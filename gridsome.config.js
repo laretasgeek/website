@@ -4,6 +4,7 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+console.log(__dirname)
 module.exports = {
   siteName: 'LaretasGeek',
   siteDescription: 'Lorem Ipsum dolor est',
@@ -39,7 +40,7 @@ module.exports = {
     { use: 'gridsome-plugin-typescript' },
     { use: 'gridsome-plugin-composition-api' },
     {
-      use: '@gridsome/source-filesystem',
+      use: __dirname + '/plugins/source-filesystem/index.js',  //'@gridsome/source-filesystem',
       options: {
         path: 'content/participants/*.md',
         typeName: 'Participant',
@@ -48,14 +49,14 @@ module.exports = {
           plugins: [
             ['@gridsome/remark-prismjs', { transformInlineCode: true }]
           ]
-        }
+        },
       }
     },
     {
-      use: '@gridsome/source-filesystem',
+      use: __dirname + '/plugins/source-filesystem/index.js',  //'@gridsome/source-filesystem',
       options: {
         path: 'content/ama/*.md',
-        typeName: 'LaretasAma',
+        typeName: 'Event',
         route: '/ama/:title',
         remark: {
           plugins: [
@@ -64,14 +65,17 @@ module.exports = {
         },
         refs: {
           participants: 'Participant',
+        },
+        nodeExtraOptions: {
+          type: 'laretas-ama'
         }
       }
     },
     {
-      use: '@gridsome/source-filesystem',
+      use: __dirname + '/plugins/source-filesystem/index.js',  //'@gridsome/source-filesystem',
       options: {
         path: 'content/geek/*.md',
-        typeName: 'LaretasGeek',
+        typeName: 'Event',
         route: '/:title',
         refs: {
           participants: 'Participant'
@@ -80,14 +84,17 @@ module.exports = {
           plugins: [
             ['@gridsome/remark-prismjs', { transformInlineCode: true }]
           ],
+        },
+        nodeExtraOptions: {
+          type: 'laretas-geek'
         }
       }
     },
     {
-      use: '@gridsome/source-filesystem',
+      use: __dirname + './plugins/source-filesystem/index.js',  //'@gridsome/source-filesystem',
       options: {
         path: 'content/java/*.md',
-        typeName: 'LaretasJava',
+        typeName: 'Event',
         route: '/:title',
         refs: {
           participants: 'Participant'
@@ -96,6 +103,9 @@ module.exports = {
           plugins: [
             ['@gridsome/remark-prismjs', { transformInlineCode: true }]
           ]
+        },
+        nodeExtraOptions: {
+          type: 'laretas-java'
         }
       }
     },
