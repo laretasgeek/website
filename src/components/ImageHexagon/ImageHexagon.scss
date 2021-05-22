@@ -1,0 +1,20 @@
+.image-hex {
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    background: var(--primary-color);
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    opacity: 0.2;
+    display: block;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+  }
+  padding: 1.7% 2.2%;
+  img {
+    display: block;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+}

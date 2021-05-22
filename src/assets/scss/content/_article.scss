@@ -1,0 +1,41 @@
+.article {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  &-header {
+    margin-bottom: 2em;
+  }
+  &-title {
+    font-size: 30px;
+    margin-bottom: 2em;
+  }
+
+  &-video {
+    margin-bottom: 2em;
+  }
+
+  &-content {
+    margin-bottom: 3em;
+    line-height: 1.2em;
+
+    ul {
+      margin-bottom: 1em;
+      li {
+        margin-bottom: 0.2em;
+      }
+    }
+
+    a {
+      color: $red;
+      @include underline-effect(var(--red-alt));
+      &:hover {
+        color: var(--red-alt);
+      }
+    }
+  }
+}
+
+h4.article-date {
+  margin-bottom: 6px;
+  color: var(--primary-color)
+}

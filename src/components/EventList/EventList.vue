@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <pager :info="pageInfo" class="pagination" navClass="nav" linkClass="page"/>
+    <pager v-if="pageInfo" :info="pageInfo" class="pagination" navClass="nav" linkClass="page"/>
   </div>
 </template>
 <script lang="ts">

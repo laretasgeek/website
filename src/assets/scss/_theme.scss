@@ -5,6 +5,7 @@
   --bg-color: #{$bg-light};
   --bg-color-alt: #bebebe;
   --highlights-color: #{$red};
+  --red-alt: #{darken($red, 10%)}
 }
 
 // Dark theme
@@ -14,4 +15,5 @@
   --bg-color: #{$bg-dark};
   --bg-color-alt: #393939;
   --highlights-color: #{$red};
+  --red-alt: #{lighten($red, 10%)}
 }

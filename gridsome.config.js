@@ -45,7 +45,10 @@ module.exports = {
         path: 'content/participants/*.md',
         typeName: 'Participant',
         route: '/participante/:id',
+        resolveAbsolutePaths: true,
         remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
           plugins: [
             ['@gridsome/remark-prismjs', { transformInlineCode: true }]
           ]
@@ -57,8 +60,11 @@ module.exports = {
       options: {
         path: 'content/ama/*.md',
         typeName: 'Event',
-        route: '/ama/:title',
+        route: '/:title',
+        resolveAbsolutePaths: true,
         remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
           plugins: [
             ['@gridsome/remark-prismjs', { transformInlineCode: true }]
           ]
@@ -77,10 +83,13 @@ module.exports = {
         path: 'content/geek/*.md',
         typeName: 'Event',
         route: '/:title',
+        resolveAbsolutePaths: true,
         refs: {
           participants: 'Participant'
         },
         remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
           plugins: [
             ['@gridsome/remark-prismjs', { transformInlineCode: true }]
           ],
@@ -91,15 +100,18 @@ module.exports = {
       }
     },
     {
-      use: __dirname + './plugins/source-filesystem/index.js',  //'@gridsome/source-filesystem',
+      use: __dirname + '/plugins/source-filesystem/index.js',  //'@gridsome/source-filesystem',
       options: {
         path: 'content/java/*.md',
         typeName: 'Event',
         route: '/:title',
+        resolveAbsolutePaths: true,
         refs: {
           participants: 'Participant'
         },
         remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
           plugins: [
             ['@gridsome/remark-prismjs', { transformInlineCode: true }]
           ]
@@ -118,7 +130,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-feed',
       options: {
-        contentTypes: ['AMA', 'Regular'],
+        contentTypes: ['Event'],
         feedOptions: {
           title: 'LaretasGeek',
           description: ''

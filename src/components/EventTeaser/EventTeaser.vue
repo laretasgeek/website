@@ -2,22 +2,22 @@
   <article class="event-teaser">
     <footer>
       <h4 class="date">
-        {{ new Date(node.date) | formatDate }}<br/>
+        {{ new Date(node.date) | formatDate }}
       </h4>
     </footer>
-    <div class="cover responsive-embed-wrapper">
-      <iframe
-          width="1440" height="762" :src="`${youtubeEmbedLink}?showinfo=0`"
-          frameborder="0" allow="encrypted-media" allowfullscreen
-      ></iframe>
-    </div>
+
+    <g-link :to="node.path">
+      <g-image :src="cover" width="480" height="300" fit="cover"></g-image>
+    </g-link>
+
     <header>
       <h2>
-        <g-link :to="node.path" class="read">
+        <g-link :to="node.path" class="read-more">
           {{ node.title }}
         </g-link>
       </h2>
     </header>
+
     <content-external-links
         :youtube="node.youtube"
         :ivoox="node.ivoox"
@@ -30,6 +30,7 @@ import { defineComponent, ComputedRef, computed, getCurrentInstance } from '@vue
 import ContentExternalLinks from '../ContentExternalLinks/'
 import formatDate from '~/filters/formatDate'
 import './EventTeaser.scss'
+import YoutubeHelper from '~/helpers/youtube'
 
 export default defineComponent({
   name: 'event-teaser',
@@ -45,26 +46,19 @@ export default defineComponent({
   setup (props: Record<string, any>) {
     const instance = getCurrentInstance()
 
-    const getYTIdFromUrl = (urlString: string) => {
-      const url = new URL(urlString)
-      return url.searchParams.get('v')
-    }
+    const cover: ComputedRef<string> = computed(() => {
+      return YoutubeHelper.coverUrl(props.node.youtube)
+    })
 
     const youtubeEmbedLink: ComputedRef<string> = computed(() => {
-      if (props.node.youtube) {
-        const id = getYTIdFromUrl(props.node.youtube)
-        return id ? `https://www.youtube-nocookie.com/embed/${id}` : ''
-      } else {
-        return ''
-      }
+      return YoutubeHelper.embedLink(props.node.youtube)
     })
 
     return {
       youtubeEmbedLink,
+      cover,
       locale: (instance?.proxy as any).$i18n.locale.toString() || '',
     }
-
-
   }
 
 })

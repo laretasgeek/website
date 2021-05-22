@@ -2,6 +2,7 @@
 id: andrea-magan
 name: Andrea Magan
 twitter: andreamagan
-linkedin: "-"
+linkedin: ""
 published: true
+avatar: ""
 ---

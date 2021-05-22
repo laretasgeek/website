@@ -1,0 +1,39 @@
+@import "~/assets/scss/settings";
+
+.participants {
+  header {
+    margin-bottom: 30px;
+    h3 {
+    }
+  }
+  list-style: none;
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  .participant {
+    padding: 0;
+    display: flex;
+    margin-bottom: 20px;
+
+    .meta {
+      flex: 1;
+
+      a {
+        @include underline-effect($red);
+        color: $red;
+      }
+    }
+  }
+
+  .image-hex {
+    margin: 0 15px 10px 0;
+    width: 80px;
+    height: 70px;
+    padding: 5px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -5,7 +5,9 @@ youtube: https://www.youtube.com/watch?v=JL7pEGKda4s
 spotify: https://open.spotify.com/episode/2NrDGwbmgFNQrjRPJH76Fo
 ivoox: https://www.ivoox.com/laretas-ama-abdon-rodriguez-audios-mp3_rf_66624653_1.html
 published: true
-
+participants: 
+  - abdon-rodriguez
+  - sergio-carracedo
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis dolor, aliquam ac nisl a, hendrerit sodales quam. Curabitur aliquam leo ut lacus consequat, ac condimentum nibh finibus. Vivamus eros lectus, consequat id blandit sit amet, vestibulum nec felis. Suspendisse ut molestie arcu. Sed varius laoreet enim, ac dapibus augue varius vitae. Duis lectus nulla, pellentesque ut vulputate ac, feugiat sit amet nibh. Suspendisse varius sit amet dolor vel vulputate. Proin id neque eu metus lobortis varius in ut metus. Phasellus fringilla blandit dolor, ac ultricies nisl ultricies dignissim.

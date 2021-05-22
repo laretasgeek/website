@@ -2,7 +2,8 @@
 id: alex-hermida
 name: Alex Hermida
 twitter: alexhermida
-linkedin: "*"
+linkedin: ""
 published: true
+avatar: ""
 ---
 
