@@ -2,56 +2,56 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>LaretasGeek</title>
-        <link>https://laretasgreek.com/</link>
+        <link>https://laretasgeek.github.io/website/</link>
         <description></description>
-        <lastBuildDate>Sun, 23 May 2021 09:41:53 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 23 May 2021 10:01:37 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Gridsome Feed Plugin</generator>
-        <atom:link href="https://laretasgreek.com/feed.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://laretasgeek.github.io/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[Fran Puga]]></title>
-            <link>https://laretasgreek.com/fran-puga/</link>
-            <guid>https://laretasgreek.com/fran-puga/</guid>
+            <link>https://laretasgeek.github.io/fran-puga/</link>
+            <guid>https://laretasgeek.github.io/fran-puga/</guid>
             <pubDate>Fri, 23 Apr 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Antón Román]]></title>
-            <link>https://laretasgreek.com/anton-roman/</link>
-            <guid>https://laretasgreek.com/anton-roman/</guid>
+            <link>https://laretasgeek.github.io/anton-roman/</link>
+            <guid>https://laretasgeek.github.io/anton-roman/</guid>
             <pubDate>Thu, 15 Apr 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Alberto Ruibal]]></title>
-            <link>https://laretasgreek.com/alberto-ruibal/</link>
-            <guid>https://laretasgreek.com/alberto-ruibal/</guid>
+            <link>https://laretasgeek.github.io/alberto-ruibal/</link>
+            <guid>https://laretasgeek.github.io/alberto-ruibal/</guid>
             <pubDate>Thu, 08 Apr 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Eloy Coto]]></title>
-            <link>https://laretasgreek.com/eloy-coto/</link>
-            <guid>https://laretasgreek.com/eloy-coto/</guid>
+            <link>https://laretasgeek.github.io/eloy-coto/</link>
+            <guid>https://laretasgeek.github.io/eloy-coto/</guid>
             <pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[David García]]></title>
-            <link>https://laretasgreek.com/david-garcia/</link>
-            <guid>https://laretasgreek.com/david-garcia/</guid>
+            <link>https://laretasgeek.github.io/david-garcia/</link>
+            <guid>https://laretasgeek.github.io/david-garcia/</guid>
             <pubDate>Thu, 11 Mar 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 ]]></content:encoded>
         </item>
         <item>
             <title><![CDATA[Abdón Rodríguez]]></title>
-            <link>https://laretasgreek.com/abdon-rodriguez/</link>
-            <guid>https://laretasgreek.com/abdon-rodriguez/</guid>
+            <link>https://laretasgeek.github.io/abdon-rodriguez/</link>
+            <guid>https://laretasgeek.github.io/abdon-rodriguez/</guid>
             <pubDate>Thu, 04 Mar 2021 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla turpis dolor, aliquam ac nisl a, hendrerit sodales quam. Curabitur aliquam leo ut lacus consequat, ac condimentum nibh finibus. Vivamus eros lectus, consequat id blandit sit amet, vestibulum nec felis. Suspendisse ut molestie arcu. Sed varius laoreet enim, ac dapibus augue varius vitae. Duis lectus nulla, pellentesque ut vulputate ac, feugiat sit amet nibh. Suspendisse varius sit amet dolor vel vulputate. Proin id neque eu metus lobortis varius in ut metus. Phasellus fringilla blandit dolor, ac ultricies nisl ultricies dignissim.
@@ -64,8 +64,8 @@ Etiam viverra mauris id mi egestas, sed lobortis lectus aliquet. Morbi id rhoncu
         </item>
         <item>
             <title><![CDATA[Laretas Geek - Especial desarrollo web con Adalab]]></title>
-            <link>https://laretasgreek.com/laretas-geek-especial-desarrollo-web-con-adalab/</link>
-            <guid>https://laretasgreek.com/laretas-geek-especial-desarrollo-web-con-adalab/</guid>
+            <link>https://laretasgeek.github.io/laretas-geek-especial-desarrollo-web-con-adalab/</link>
+            <guid>https://laretasgeek.github.io/laretas-geek-especial-desarrollo-web-con-adalab/</guid>
             <pubDate>Wed, 04 Nov 2020 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[Nuevo Laretas Geek y uno muy especial: vamos a conocer una iniciativa super interesante llamada Adalab, una escuela especializada en formación digital para mujeres que trabaja para formar y acompañar a futuras desarrolladoras que buscan un giro profesional adaptado a las nuevas necesidades de las empresas.
 
@@ -81,25 +81,9 @@ A estas y otras preguntas responderemos de la mano de una de sus fundadoras y tr
 ]]></content:encoded>
         </item>
         <item>
-            <title><![CDATA[Laretas Geek - Especial Engineering Management]]></title>
-            <link>https://laretasgreek.com/laretas-geek-especial-engineering-management/</link>
-            <guid>https://laretasgreek.com/laretas-geek-especial-engineering-management/</guid>
-            <pubDate>Fri, 24 Jul 2020 00:00:00 GMT</pubDate>
-            <content:encoded><![CDATA[
-Mesa redonda en la que hablamos de algunos temas según el área en el que se especialicen las personas invitadas, en este caso, hablaremos de Engineering Management (y de otras cosas) con:
-
-
-- David Pardo: Director de Producción en Corunet https://www.linkedin.com/in/david-par...
-- Félix López: Engineering Site Lead en Eventbrite https://www.linkedin.com/in/flopezluis/
-- Karina Pangaro: Engineering Manager en Eventbrite https://www.linkedin.com/in/karina-pa...
-- Lucía Pérez: Team Lead en Optare Solutions https://www.linkedin.com/in/luc%C3%AD...
-- Martín Pérez: Engineering Lead en Cisco https://www.linkedin.com/in/mpermar/
-]]></content:encoded>
-        </item>
-        <item>
             <title><![CDATA[Laretas Geek - Especial Comunidades Galicia]]></title>
-            <link>https://laretasgreek.com/laretas-geek-especial-comunidades-galicia/</link>
-            <guid>https://laretasgreek.com/laretas-geek-especial-comunidades-galicia/</guid>
+            <link>https://laretasgeek.github.io/laretas-geek-especial-comunidades-galicia/</link>
+            <guid>https://laretasgeek.github.io/laretas-geek-especial-comunidades-galicia/</guid>
             <pubDate>Fri, 24 Jul 2020 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 Volvemos a la carga con un nuevo evento sobre las comunidades locales para saber todo lo que se cuece en Galicia y cómo se está llevando eso del Covid en los diferentes grupos.
@@ -116,9 +100,25 @@ En esta vuelta contamos con:
 ]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[Laretas Geek - Especial Engineering Management]]></title>
+            <link>https://laretasgeek.github.io/laretas-geek-especial-engineering-management/</link>
+            <guid>https://laretasgeek.github.io/laretas-geek-especial-engineering-management/</guid>
+            <pubDate>Fri, 24 Jul 2020 00:00:00 GMT</pubDate>
+            <content:encoded><![CDATA[
+Mesa redonda en la que hablamos de algunos temas según el área en el que se especialicen las personas invitadas, en este caso, hablaremos de Engineering Management (y de otras cosas) con:
+
+
+- David Pardo: Director de Producción en Corunet https://www.linkedin.com/in/david-par...
+- Félix López: Engineering Site Lead en Eventbrite https://www.linkedin.com/in/flopezluis/
+- Karina Pangaro: Engineering Manager en Eventbrite https://www.linkedin.com/in/karina-pa...
+- Lucía Pérez: Team Lead en Optare Solutions https://www.linkedin.com/in/luc%C3%AD...
+- Martín Pérez: Engineering Lead en Cisco https://www.linkedin.com/in/mpermar/
+]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[Laretas Geek - Mesa redonda 25 años de Java]]></title>
-            <link>https://laretasgreek.com/laretas-geek-mesa-redonda-25-anos-de-java/</link>
-            <guid>https://laretasgreek.com/laretas-geek-mesa-redonda-25-anos-de-java/</guid>
+            <link>https://laretasgeek.github.io/laretas-geek-mesa-redonda-25-anos-de-java/</link>
+            <guid>https://laretasgeek.github.io/laretas-geek-mesa-redonda-25-anos-de-java/</guid>
             <pubDate>Mon, 29 Jun 2020 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 Mesa redonda en la que hablamos de los 25 años de Java, las nueva versiones desde java 8, el futuro de la plataforma, Kotlin, los nuevos microframeworks (Quarkus y Micronaut), la necesidad de hacer tests, las ventajas y retos de TDD, el movimiento #BlackTechTwitter y la importancia de la nomenclatura inclusiva con:
@@ -131,8 +131,8 @@ Mesa redonda en la que hablamos de los 25 años de Java, las nueva versiones des
         </item>
         <item>
             <title><![CDATA[Laretas test]]></title>
-            <link>https://laretasgreek.com/laretas-test/</link>
-            <guid>https://laretasgreek.com/laretas-test/</guid>
+            <link>https://laretasgeek.github.io/laretas-test/</link>
+            <guid>https://laretasgeek.github.io/laretas-test/</guid>
             <pubDate>Mon, 29 Jun 2020 00:00:00 GMT</pubDate>
             <content:encoded><![CDATA[
 Mesa redonda en la que hablamos de los 25 años de Java, las nueva versiones desde java 8, el futuro de la plataforma, Kotlin, los nuevos microframeworks (Quarkus y Micronaut), la necesidad de hacer tests, las ventajas y retos de TDD, el movimiento #BlackTechTwitter y la importancia de la nomenclatura inclusiva con:
