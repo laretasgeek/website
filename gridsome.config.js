@@ -9,6 +9,7 @@ module.exports = {
   siteName: 'LaretasGeek',
   siteDescription: 'Lorem Ipsum dolor est',
   siteUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:8082' : 'https://laretasgeek.github.io/website/',
+  pathPrefix: process.env.NODE_ENV === 'development' ? '' : '/website',
   icon: './src/assets/i/favicon.png',
   plugins: [
     {
