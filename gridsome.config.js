@@ -8,7 +8,7 @@ console.log(__dirname)
 module.exports = {
   siteName: 'LaretasGeek',
   siteDescription: 'Lorem Ipsum dolor est',
-  siteUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:8082' : 'https://laretasgreek.com',
+  siteUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:8082' : 'https://laretasgeek.github.io/website/',
   icon: './src/assets/i/favicon.png',
   plugins: [
     {
