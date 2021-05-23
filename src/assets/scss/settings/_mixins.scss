@@ -23,3 +23,29 @@
     }
   }
 }
+
+@mixin underline-effect-left($color: currentColor) {
+  text-decoration: none;
+  padding-bottom: 3px;
+  position: relative;
+  &:hover {
+    text-decoration: none;
+  }
+  &:after {
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    content: '';
+    height: 2px;
+    position: absolute;
+    background: $color;
+    width: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &:hover {
+    &:after {
+      width: 100%;
+      right: 0;
+    }
+  }
+}

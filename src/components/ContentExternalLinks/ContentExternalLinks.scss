@@ -2,6 +2,9 @@
 
 .content-external-links {
   background: $white;
+  [data-theme="dark"] & {
+    background: #666;
+  }
   padding: 20px 20px 10px 20px;
   display: flex;
   a {

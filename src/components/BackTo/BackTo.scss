@@ -1,0 +1,15 @@
+@import "~@/assets/scss/settings";
+
+.back-to {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  a {
+    display: inline-block;
+    color: $red;
+    margin-top: 6px;
+    line-height: 1em;
+    font-size: 18px;
+    @include underline-effect-left($red)
+  }
+}

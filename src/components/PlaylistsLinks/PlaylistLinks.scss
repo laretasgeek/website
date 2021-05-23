@@ -1,0 +1,61 @@
+@import "~@/assets/scss/settings";
+
+.playlist-links {
+  background: $white;
+  [data-theme="dark"] & {
+    background: #666;
+    color: $white;
+  }
+
+  padding: 10px 20px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  header {
+    margin: 7px 20px 15px 0;
+    h2 {
+      color: currentColor;
+      margin: 0;
+      font-size: 18px;
+      font-family: $primary-font;
+    }
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  li {
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    width: 120px;
+    display: flex;
+    margin: 0 15px 10px 0;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+
+    img {
+      display: block;
+    }
+
+    &.ivoox {
+      img {
+        transform: translate(0, -2px);
+        width: 90px;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

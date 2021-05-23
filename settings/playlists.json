@@ -1,0 +1,23 @@
+{
+  "playlists": {
+    "laretas_ama": {
+      "ivoox": "https://www.ivoox.com/podcast-laretasgeek_sq_f1939875_1.html",
+      "spotify": "https://open.spotify.com/show/2iMpr5Kos3j5YuqB6HfYWL",
+      "youtube": "https://www.youtube.com/playlist?list=PLlfWiFbQM4vrrm9KfdmynRbWBFH5UJIOz"
+    },
+    "laretas_geek": {
+      "ivoox": "https://www.ivoox.com/podcast-laretasgeek_sq_f1939875_1.html",
+      "spotify": "https://open.spotify.com/show/2iMpr5Kos3j5YuqB6HfYWL",
+      "youtube": "https://www.youtube.com/playlist?list=PLlfWiFbQM4vpy6ec22QEC4A8fTT1FSgL3"
+    },
+    "laretas_java": {
+      "ivoox": "https://www.ivoox.com/podcast-laretasgeek_sq_f1939875_1.html",
+      "spotify": "https://open.spotify.com/show/2iMpr5Kos3j5YuqB6HfYWL"
+    },
+    "global": {
+      "youtube": "https://www.youtube.com/channel/UCYSy-eQm6Q02o7WiR6JTqJg",
+      "ivoox": "https://www.ivoox.com/podcast-laretasgeek_sq_f1939875_1.html",
+      "spotify": "https://open.spotify.com/show/2iMpr5Kos3j5YuqB6HfYWL"
+    }
+  }
+}

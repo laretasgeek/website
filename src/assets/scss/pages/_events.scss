@@ -1,0 +1,29 @@
+@improt "~/assets/scss/settings";
+.events-page {
+  &-header {
+    margin-bottom: 40px;
+  }
+  &-top {
+    margin-bottom: 70px;
+    @include media($xs) {
+      margin-bottom: 40px;
+    }
+  }
+  .content {
+    margin-bottom: 60px;
+    max-width: 900px;
+    font-size: 20px;
+    @include media($xs) {
+      font-size: 16px;
+    }
+  }
+
+  .next-event {
+    background: var(--primary-color);
+    padding: 30px 40px;
+    color: var(--contrast-color);
+  }
+  .playlist-links {
+    margin-bottom: 30px;
+  }
+}
